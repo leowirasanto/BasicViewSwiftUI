@@ -23,6 +23,7 @@
 		B368251123F29C9E00AC67D3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368251023F29C9E00AC67D3 /* Menu.swift */; };
 		B368251623F2AB5A00AC67D3 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368251523F2AB5A00AC67D3 /* Setting.swift */; };
 		B368251A23F2ABEA00AC67D3 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B368251923F2ABEA00AC67D3 /* AboutView.swift */; };
+		C9633A8E1434BA2D6675B757 /* Pods_BasicViewSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C6E153580F4597362A26F5 /* Pods_BasicViewSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162934EDB8C3D23D32054692 /* Pods-BasicViewSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicViewSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-BasicViewSwiftUI/Pods-BasicViewSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		25C6E153580F4597362A26F5 /* Pods_BasicViewSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicViewSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93E4B2900D1885AA19089827 /* Pods-BasicViewSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicViewSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-BasicViewSwiftUI/Pods-BasicViewSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		B36824C823F28DF000AC67D3 /* BasicViewSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicViewSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36824CB23F28DF000AC67D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36824CD23F28DF000AC67D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9633A8E1434BA2D6675B757 /* Pods_BasicViewSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D12CBF4D6E9CD7BBA1AFB2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25C6E153580F4597362A26F5 /* Pods_BasicViewSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EE1827B7CB6CDEBAEDAEFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				162934EDB8C3D23D32054692 /* Pods-BasicViewSwiftUI.debug.xcconfig */,
+				93E4B2900D1885AA19089827 /* Pods-BasicViewSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B36824BF23F28DF000AC67D3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +122,8 @@
 				B36824E123F28DF200AC67D3 /* BasicViewSwiftUITests */,
 				B36824EC23F28DF200AC67D3 /* BasicViewSwiftUIUITests */,
 				B36824C923F28DF000AC67D3 /* Products */,
+				8EE1827B7CB6CDEBAEDAEFDB /* Pods */,
+				3D12CBF4D6E9CD7BBA1AFB2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B36824F223F28DF200AC67D3 /* Build configuration list for PBXNativeTarget "BasicViewSwiftUI" */;
 			buildPhases = (
+				BE99842E474FA3BBE6BF0EA7 /* [CP] Check Pods Manifest.lock */,
 				B36824C423F28DF000AC67D3 /* Sources */,
 				B36824C523F28DF000AC67D3 /* Frameworks */,
 				B36824C623F28DF000AC67D3 /* Resources */,
+				612BCAB045EB3F6EC3BFC838 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +352,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		612BCAB045EB3F6EC3BFC838 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicViewSwiftUI/Pods-BasicViewSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicViewSwiftUI/Pods-BasicViewSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicViewSwiftUI/Pods-BasicViewSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE99842E474FA3BBE6BF0EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicViewSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B36824C423F28DF000AC67D3 /* Sources */ = {
@@ -504,6 +573,7 @@
 		};
 		B36824F323F28DF200AC67D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162934EDB8C3D23D32054692 /* Pods-BasicViewSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +594,7 @@
 		};
 		B36824F423F28DF200AC67D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E4B2900D1885AA19089827 /* Pods-BasicViewSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
